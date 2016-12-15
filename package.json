@@ -1,24 +1,20 @@
 {
   "name": "shower",
-  "description": "Shower HTML presentation engine",
+  "description": "What is React Native?",
   "version": "2.1.5",
   "author": {
-    "name": "Vadim Makeev",
-    "url": "http://pepelsbey.net/"
+    "name": "Andrey Semin"
   },
-  "homepage": "https://github.com/shower/shower",
+  "homepage": "https://andrey-semin.github.io/React-Native-talk/",
   "repository": {
     "type": "git",
-    "url": "git://github.com/shower/shower.git"
-  },
-  "bugs": {
-    "url": "http://github.com/shower/shower/issues"
+    "url": "https://github.com/andrey-semin/React-Native-talk"
   },
   "license": "MIT",
   "keywords": [
-    "shower",
+    "react",
     "presentation",
-    "template"
+    "react-native"
   ],
   "files": [
     "pictures/**",
