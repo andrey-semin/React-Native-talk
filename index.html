@@ -29,27 +29,33 @@
     .slide .margin-top-25 {
       margin-top: 25px;
     }
+    .slide .margin-top-60 {
+      margin-top: 60px;
+    }
     .progress {
       border: 10px solid #59cae8;
       border-right-color: transparent;
     }
-    .centered-image {
-      height: 500px;
-      margin: 0 auto;
-      display: block
-    }
-    .slide .big-label {
-      font-size: 80px;
+    .centered-container {
       text-align: center;
-      margin-top: 140px;
     }
     .inline-image {
       height: 250px;
       margin-left: 35px;
     }
-    .image-wrapper {
+    .padding-top-20 {
+      padding-top: 60px;
+    }
+    .padding-top-80 {
+      padding-top: 80px;
+    }
+    .slide-1 img {
+      height: 500px;
+    }
+    .slide-2 h2 {
+      font-size: 80px;
       text-align: center;
-      padding-top: 100px;
+      margin-top: 140px;
     }
   </style>
 </head>
@@ -58,29 +64,64 @@
 		<img src="pictures/cover-intro.jpg" alt="React Native" class="cover" >
 	</section>
 	<section class="slide hide-counter with-cover">
-    <img src="pictures/avatar.jpg" alt="Andrey Semin" class="avatar" />
-      <h2 class="no-margin">&nbsp;Andrey Semin</h2>
-      <h4>&nbsp;Frontend Developer @ EPAM Systems</h4>
-      <ul class="margin-top-25">
+    <div class="padding-top-20">
+      <img src="pictures/avatar.jpg" alt="Andrey Semin" class="avatar" />
+      <div class="margin-top-60">
+        <h2 class="no-margin">&nbsp;Andrey Semin</h2>
+        <h4>&nbsp;Frontend Developer @ EPAM Systems</h4>
+        <ul class="margin-top-25">
+          <li>
+            <a href="https://vk.com/id8146217">https://vk.com/id8146217</a>
+          </li>
+          <li>
+            <a href="https://medium.com/@semin_andrey">https://medium.com/@semin_andrey</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+	</section>
+	<section class="slide slide-1 with-cover">
+    <div class="centered-container">
+      <img src="pictures/slide1/question.jpg" alt="Question" />
+    </div>
+	</section>
+  <section class="slide slide-2 with-cover">
+    <h2 class="label">Building Native Apps is<br/>HARD</h2>
+  </section>
+  <section class="slide slide-3 with-cover">
+    <div class="padding-top-80 centered-container">
+      <h2>Web technologies</h2>
+      <img src="pictures/slide3/html.png" alt="HTML" class="inline-image"/>
+      <img src="pictures/slide3/css.png" alt="CSS" class="inline-image"/>
+      <img src="pictures/slide3/js.png" alt="Javascript" class="inline-image"/>
+    </div>
+  </section>
+  <section class="slide slide-4 with-cover">
+    <div class="padding-top-80 centered-container">
+      <h2>Hybrid mobile apps</h2>
+      <img src="pictures/slide4/tech.png" alt="Hybrid mobile apps" class="centered-image"/>
+    </div>
+  </section>
+  <section class="slide slide-5 with-cover">
+    <div class="padding-top-80 centered-container">
+      <h2>Why not Web View?</h2>
+      <ul>
         <li>
-          <a href="https://vk.com/id8146217">https://vk.com/id8146217</a>
+          They are slow (Really slow)
         </li>
         <li>
-          <a href="https://medium.com/@semin_andrey">https://medium.com/@semin_andrey</a>
+          No complex gestures
+        </li>
+        <li>
+          Cannot use native components
+        </li>
+        <li>
+          No platform specific look and feel
+        </li>
+        <li>
+          Incomplete API support
         </li>
       </ul>
-	</section>
-	<section class="slide with-cover">
-    <img src="pictures/slide1/question.jpg" alt="Question" class="centered-image" />
-	</section>
-  <section class="slide with-cover">
-    <h2 class="big-label">Building Native Apps is<br/>HARD</h2>
-  </section>
-  <section class="slide with-cover">
-    <div class="image-wrapper">
-      <img src="pictures/slide2/html.png" alt="HTML" class="inline-image"/>
-      <img src="pictures/slide2/css.png" alt="CSS" class="inline-image"/>
-      <img src="pictures/slide2/js.png" alt="Javascript" class="inline-image"/>
     </div>
   </section>
 	<div class="progress"></div>
