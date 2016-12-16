@@ -10,9 +10,12 @@
     .hide-counter::after {
       display: none;
     }
-    .with-cover {
+    .slide.with-cover {
       background: url('./pictures/cover.jpg') center center no-repeat;
       background-size: cover;
+    }
+    .slide.with-padding {
+      padding-top: 180px;
     }
     .slide {
       padding: 106px 22px 0;
@@ -45,9 +48,6 @@
     }
     .padding-top-20 {
       padding-top: 60px;
-    }
-    .padding-top-80 {
-      padding-top: 80px;
     }
     .slide-1 img {
       height: 500px;
@@ -88,22 +88,23 @@
   <section class="slide slide-2 with-cover">
     <h2 class="label">Building Native Apps is<br/>HARD</h2>
   </section>
-  <section class="slide slide-3 with-cover">
-    <div class="padding-top-80 centered-container">
+  <section class="slide slide-3 with-cover with-padding">
+    <div class="centered-container">
       <h2>Web technologies</h2>
       <img src="pictures/slide3/html-logo.png" alt="HTML" class="inline-image"/>
       <img src="pictures/slide3/css-logo.png" alt="CSS" class="inline-image"/>
       <img src="pictures/slide3/js-logo.png" alt="Javascript" class="inline-image"/>
     </div>
   </section>
-  <section class="slide slide-4 with-cover">
-    <div class="padding-top-80 centered-container">
-      <h2>Hybrid mobile apps</h2>
-      <img src="pictures/slide4/tech.png" alt="Hybrid mobile apps" class="centered-image"/>
+  <section class="slide slide-4 with-cover with-padding">
+    <div class="centered-container">
+      <h2 class="no-margin">Hybrid mobile apps</h2>
+      <h3>Web View apps</h3>
+      <img src="pictures/slide4/tech.png" alt="Hybrid mobile apps"/>
     </div>
   </section>
-  <section class="slide slide-5 with-cover">
-    <div class="padding-top-80 centered-container">
+  <section class="slide slide-5 with-cover with-padding">
+    <div class="centered-container">
       <h2>Why not Web View?</h2>
       <ul>
         <li>
@@ -122,6 +123,45 @@
           Incomplete API support
         </li>
       </ul>
+    </div>
+  </section>
+  <section class="slide slide-6 with-cover with-padding">
+    <div class="centered-container">
+      <h2 class="no-margin">Hybrid mobile apps</h2>
+      <h3>Compiled mobile apps</h3>
+      <img src="pictures/slide6/tech.png" alt="Compiled mobile apps" />
+    </div>
+  </section>
+  <section class="slide slide-7 with-cover with-padding">
+    <div class="centered-container">
+      <h2>Why not compiled apps?</h2>
+      <ul>
+        <li>
+          Don't really support everything
+        </li>
+        <li>
+          Hard to debug
+        </li>
+        <li>
+          Need to understand platform specific architecture
+        </li>
+        <li>
+          Cannot use popular open source libraries
+        </li>
+        <li>
+          Delayed support for the latest platform updates
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="slide slide-9 with-cover with-padding">
+    <div class="centered-container">
+      <img src="pictures/slide9/facebook.png" alt="Facebook" />
+    </div>
+  </section>
+  <section class="slide slide-10 with-cover with-padding">
+    <div class="centered-container">
+      <img src="pictures/slide10/react.png" alt="React" />
     </div>
   </section>
 	<div class="progress"></div>
