@@ -10,9 +10,24 @@
     .hide-counter::after {
       display: none;
     }
-    .with-cover {
+    .slide::after {
+      background: url('./pictures/counter.png') center center no-repeat;
+      height: 56px;
+      width: 56px;
+      background-size: contain;
+      padding: 0px;
+      bottom: 20px;
+      right: 20px;
+      top: initial;
+      color: #585a5e;
+      padding-top: 3px;
+    }
+    .slide.with-cover {
       background: url('./pictures/cover.jpg') center center no-repeat;
       background-size: cover;
+    }
+    .slide.with-padding {
+      padding-top: 180px;
     }
     .slide {
       padding: 106px 22px 0;
@@ -45,9 +60,6 @@
     }
     .padding-top-20 {
       padding-top: 60px;
-    }
-    .padding-top-80 {
-      padding-top: 80px;
     }
     .slide-1 img {
       height: 500px;
@@ -88,22 +100,23 @@
   <section class="slide slide-2 with-cover">
     <h2 class="label">Building Native Apps is<br/>HARD</h2>
   </section>
-  <section class="slide slide-3 with-cover">
-    <div class="padding-top-80 centered-container">
+  <section class="slide slide-3 with-cover with-padding">
+    <div class="centered-container">
       <h2>Web technologies</h2>
       <img src="pictures/slide3/html-logo.png" alt="HTML" class="inline-image"/>
       <img src="pictures/slide3/css-logo.png" alt="CSS" class="inline-image"/>
       <img src="pictures/slide3/js-logo.png" alt="Javascript" class="inline-image"/>
     </div>
   </section>
-  <section class="slide slide-4 with-cover">
-    <div class="padding-top-80 centered-container">
-      <h2>Hybrid mobile apps</h2>
-      <img src="pictures/slide4/tech.png" alt="Hybrid mobile apps" class="centered-image"/>
+  <section class="slide slide-4 with-cover with-padding">
+    <div class="centered-container">
+      <h2 class="no-margin">Hybrid mobile apps</h2>
+      <h3>Web View apps</h3>
+      <img src="pictures/slide4/tech.png" alt="Hybrid mobile apps"/>
     </div>
   </section>
-  <section class="slide slide-5 with-cover">
-    <div class="padding-top-80 centered-container">
+  <section class="slide slide-5 with-cover with-padding">
+    <div class="centered-container">
       <h2>Why not Web View?</h2>
       <ul>
         <li>
@@ -124,7 +137,83 @@
       </ul>
     </div>
   </section>
-	<div class="progress"></div>
+  <section class="slide slide-6 with-cover with-padding">
+    <div class="centered-container">
+      <h2 class="no-margin">Hybrid mobile apps</h2>
+      <h3>Compiled mobile apps</h3>
+      <img src="pictures/slide6/tech.png" alt="Compiled mobile apps" />
+    </div>
+  </section>
+  <section class="slide slide-7 with-cover with-padding">
+    <div class="centered-container">
+      <h2>Why not compiled apps?</h2>
+      <ul>
+        <li>
+          Don't really support everything
+        </li>
+        <li>
+          Hard to debug
+        </li>
+        <li>
+          Need to understand platform specific architecture
+        </li>
+        <li>
+          Cannot use popular open source libraries
+        </li>
+        <li>
+          Delayed support for the latest platform updates
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="slide slide-8 with-cover with-padding">
+    <div class="centered-container">
+      <img src="pictures/slide8/crying.gif" alt="React" />
+    </div>
+  </section>
+  <section class="slide slide-9 with-cover with-padding">
+    <div class="centered-container">
+      <img src="pictures/slide9/react.png" alt="React" />
+    </div>
+  </section>
+  <section class="slide slide-10 with-cover with-padding">
+    <div class="centered-container">
+      <h2>React consists of</h2>
+      <img src="pictures/slide10/react.png" alt="React" />
+    </div>
+  </section>
+  <section class="slide slide-11 with-cover with-padding">
+    <div class="centered-container">
+      <h2>React consists of</h2>
+      <img src="pictures/slide11/react.png" alt="React" />
+    </div>
+  </section>
+  <section class="slide slide-12 with-cover with-padding">
+    <div class="centered-container">
+      <h2>React consists of</h2>
+      <img src="pictures/slide12/react.png" alt="React" />
+    </div>
+  </section>
+  <section class="slide slide-13 with-cover with-padding">
+    <div class="centered-container">
+      <h2>How React Native works</h2>
+      <img src="pictures/slide13/react.png" alt="React Native" />
+    </div>
+  </section>
+  <section class="slide slide-14 with-cover with-padding">
+    <div class="centered-container">
+      <h2>Write once</h2>
+      <img src="pictures/slide14/code.png" alt="Pull to refresh code" height="400"/>
+    </div>
+  </section>
+  <section class="slide slide-15 with-cover with-padding">
+    <div class="centered-container">
+      <h2>Get platform specific UI</h2>
+      <img src="pictures/slide15/ios.gif" alt="Pull to refresh iOs" height="430"/>
+      <img src="pictures/slide15/android.gif" alt="Pull to refresh android" height="430"/>
+    </div>
+  </section>
+	<!-- <div class="progress"></div> -->
 	<script src="shower/shower.min.js"></script>
 </body>
 </html>
