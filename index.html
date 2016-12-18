@@ -26,6 +26,10 @@
       background: url('./pictures/cover.jpg') center center no-repeat;
       background-size: cover;
     }
+    .slide.with-questions {
+      background: url('pictures/slide30/questions.jpg') center center no-repeat;
+      background-size: cover;
+    }
     .slide.with-padding {
       padding-top: 160px;
     }
@@ -68,6 +72,23 @@
       font-size: 80px;
       text-align: center;
       margin-top: 140px;
+    }
+    .slide .code {
+      text-align: left;
+      width: 450px;
+      margin: 0 auto;
+    }
+    .showcase-container {
+
+    }
+    .showcase-item {
+      width: 30%;
+      display: inline-block;
+      text-align: center;
+    }
+    .showcase-image {
+      border-radius: 20px;
+      width: 120px;
     }
   </style>
 </head>
@@ -214,33 +235,160 @@
   <section class="slide slide-16 with-cover with-padding">
     <div class="centered-container">
       <h2>Get platform specific UI</h2>
-      <img src="pictures/slide16/ios.gif" alt="Pull to refresh iOs" height="430"/>
-      <img src="pictures/slide16/android.gif" alt="Pull to refresh android" height="430"/>
+      <img src="pictures/slide16/ios.gif" alt="Pull to refresh iOs" height="430" />
+      <img src="pictures/slide16/android.gif" alt="Pull to refresh android" height="430" />
     </div>
   </section>
   <section class="slide slide-17 with-cover with-padding">
     <div class="centered-container">
       <h2>Performance</h2>
-      <img src="pictures/slide17/slow.png" alt="Performance" height="430"/>
+      <img src="pictures/slide17/slow.png" alt="Performance" height="430" />
     </div>
   </section>
   <section class="slide slide-18 with-cover with-padding">
     <div class="centered-container">
       <h2>Performance</h2>
-      <img src="pictures/slide18/react.png" alt="React Native"/>
+      <img src="pictures/slide18/react.png" alt="React Native" />
     </div>
   </section>
   <section class="slide slide-19 with-cover with-padding">
     <div class="centered-container">
       <h2>Performance</h2>
-      <img src="pictures/slide19/react.png" alt="React Native"/>
+      <img src="pictures/slide19/react.png" alt="React Native" />
     </div>
   </section>
   <section class="slide slide-20 with-cover with-padding">
     <div class="centered-container">
       <h2>Performance</h2>
-      <img src="pictures/slide20/react.png" alt="React Native"/>
+      <img src="pictures/slide20/react.png" alt="React Native" />
     </div>
+  </section>
+  <section class="slide slide-21 with-cover with-padding">
+    <div class="centered-container">
+      <h2>How to use it</h2>
+      <img src="pictures/slide21/bobby.gif" alt="How to use it" />
+    </div>
+  </section>
+  <section class="slide slide-22 with-cover with-padding">
+    <div class="centered-container">
+      <h2>Ready to go</h2>
+      <pre class="code">
+        <code>npm install react-native-cli</code>
+        <code>react-native init ExampleApp</code>
+        <code>cd ExampleApp</code>
+        <code>react-native run-android</code>
+      </pre>
+    </div>
+  </section>
+  <section class="slide slide-23 with-cover with-padding">
+    <div class="centered-container">
+      <h2>index.android.js</h2>
+      <img src="pictures/slide23/code.png" height="400" alt="index.android.js" />
+    </div>
+  </section>
+  <section class="slide slide-24 with-cover with-padding">
+    <div class="centered-container">
+      <h2>Styles</h2>
+      <ul class="code">
+        <li>
+          background-color -> backgroundColor
+        </li>
+        <li>
+          margin-top -> marginTop
+        </li>
+        <li>
+          height -> height
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="slide slide-25 with-cover with-padding">
+    <div class="centered-container">
+      <h2>Styles</h2>
+      <img src="pictures/slide25/styles1.png" height="370"/>
+      <img src="pictures/slide25/styles2.png" height="370"/>
+    </div>
+  </section>
+  <section class="slide slide-26 with-cover with-padding">
+    <div class="centered-container">
+      <h2 class="no-margin">Conclusion</h2>
+      <h3>Pros</h3>
+      <ul>
+        <li>
+          It's pretty fast
+        </li>
+        <li>
+          Sharable code
+        </li>
+        <li>
+          Easy to debug (using Chrome dev tolls)
+        </li>
+        <li>
+          Web-like approach
+        </li>
+        <li>
+          Works with Redux &nbsp;<img src="pictures/slide26/good.png" height="30"/>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="slide slide-27 with-cover with-padding">
+    <div class="centered-container">
+      <h2 class="no-margin">Conclusion</h2>
+      <h3>Cons</h3>
+      <ul>
+        <li>
+          It's still young
+        </li>
+        <li>
+          Bridge performance is low
+        </li>
+        <li>
+          Hard to implement some trivial for Web things
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="slide slide-28 with-cover with-padding">
+    <div class="centered-container">
+      <h2 class="no-margin">Conclusion</h2>
+      <br />
+      <img src="pictures/slide28/overall.png" alt="People talk"/>
+    </div>
+  </section>
+  <section class="slide slide-29 with-cover with-padding">
+    <div class="centered-container">
+      <h2>Showcase</h2>
+      <div class="showcase-container">
+        <div class="showcase-item">
+          <img src="pictures/slide29/fb.png" alt="Facebook" class="showcase-image"/>
+          <p>Facebook</p>
+        </div>
+        <div class="showcase-item">
+          <img src="pictures/slide29/fb_ads.png" alt="Fabebook Ads" class="showcase-image"/>
+          <p>Facebook Ads Manager</p>
+        </div>
+        <div class="showcase-item">
+          <img src="pictures/slide29/fb_groups.png" alt="Facebook Groups" class="showcase-image"/>
+          <p>Facebook Groups</p>
+        </div>
+        <br />
+        <div class="showcase-item">
+          <img src="pictures/slide29/instagram.jpeg" alt="Instagram" class="showcase-image"/>
+          <p>Instagram</p>
+        </div>
+        <div class="showcase-item">
+          <img src="pictures/slide29/airbnb.png" alt="Aribnb" class="showcase-image"/>
+          <p>Airbnb</p>
+        </div>
+        <div class="showcase-item">
+          <img src="pictures/slide29/soundcloud.jpg" alt="SoundCloud Pulse" class="showcase-image"/>
+          <p>SoundCloud Pulse</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="slide slide-30 with-questions hide-counter">
   </section>
 	<!-- <div class="progress"></div> -->
 	<script src="node_modules/shower-core/shower.min.js"></script>
