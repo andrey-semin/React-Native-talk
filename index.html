@@ -27,7 +27,7 @@
       background-size: cover;
     }
     .slide.with-questions {
-      background: url('pictures/slide30/questions.jpg') center center no-repeat;
+      background: url('pictures/cover-outro.jpg') center center no-repeat;
       background-size: cover;
     }
     .slide.with-padding {
@@ -54,16 +54,23 @@
       height: 250px;
       margin-left: 35px;
     }
-    .padding-top-20 {
+    .padding-top-60 {
       padding-top: 60px;
     }
-    .slide-1 img {
-      height: 500px;
-    }
-    .slide-2 h2 {
+		.big-label {
+			font-size: 40px;
+		}
+    .with-big-label h2 {
       font-size: 80px;
       text-align: center;
       margin-top: 140px;
+    }
+    .bottom-image {
+      height: 300px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      text-align: center;
     }
     .slide .code {
       text-align: left;
@@ -79,6 +86,9 @@
       border-radius: 20px;
       width: 120px;
     }
+    .card-slide-image {
+      height: 500px;
+    }
   </style>
 </head>
 <body class="shower list">
@@ -86,41 +96,113 @@
 		<img src="pictures/cover-intro.jpg" alt="React Native" class="cover">
 	</section>
 	<section class="slide hide-counter with-cover">
-    <div class="padding-top-20 centered-container">
+    <div class="padding-top-60 centered-container">
       <img src="pictures/avatar.jpg" alt="Andrey Semin" class="avatar" />
       <h2 class="no-margin">&nbsp;Andrey Semin</h2>
       <h4>&nbsp;Frontend Developer @ EPAM Systems</h4>
     </div>
 	</section>
-	<section class="slide slide-1 with-cover">
+  <section class="slide with-cover with-padding">
     <div class="centered-container">
-      <img src="pictures/slide1/question.jpg" alt="Question" />
+      <h2>What did we have at the start?</h2>
+      <ul>
+        <li>
+          Fully implemented web-app (frontend + backend + db)
+        </li>
+        <li>
+          Dev team of 2 people
+        </li>
+        <li>
+          Some designs. Kind of.
+        </li>
+      </ul>
     </div>
-	</section>
-  <section class="slide slide-2 with-cover">
+  </section>
+  <section class="slide with-cover with-padding">
+    <div class="centered-container">
+      <h2>What restrictions did we have?</h2>
+      <ul>
+        <li>
+          Minimize 'learning technology' time
+        </li>
+        <li>
+          Minimize development time
+        </li>
+        <li>
+          Reduce the cost of further app support
+        </li>
+        <li>
+          Minimize feature delivering time
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="slide with-cover with-padding">
+    <div class="centered-container">
+      <h2>Choosing a right tool</h2>
+      <ul>
+        <li>
+          Native app
+        </li>
+        <li>
+          Web View mobile app
+        </li>
+        <li>
+          Compiled mobile app
+        </li>
+        <li>
+          React Native
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="slide with-cover with-big-label">
     <h2 class="label">Building Native Apps is<br/>HARD</h2>
   </section>
-  <section class="slide slide-3 with-cover with-padding">
+  <section class="slide with-cover with-big-label">
+    <h2 class="label">Building Native Apps is<br/>HARD</h2>
+    <img src="pictures/s4-that-feel.png" class="bottom-image" />
+  </section>
+  <section class="slide with-cover with-padding">
     <div class="centered-container">
-      <h2>Web technologies</h2>
-      <img src="pictures/slide3/html-logo.png" alt="HTML" class="inline-image"/>
-      <img src="pictures/slide3/css-logo.png" alt="CSS" class="inline-image"/>
-      <img src="pictures/slide3/js-logo.png" alt="Javascript" class="inline-image"/>
+      <h2>What's wrong with native apps</h2>
+      <ul>
+        <li>
+          1 app per 1 platform
+        </li>
+        <li>
+          No code sharing
+        </li>
+        <li>
+          No experience sharing between teams
+        </li>
+        <li>
+          No hot reloading
+        </li>
+      </ul>
     </div>
   </section>
-  <section class="slide slide-4 with-cover with-padding">
+  <section class="slide with-cover with-padding">
+    <div class="centered-container">
+      <h2>Web technologies</h2>
+      <img src="pictures/s7-html-logo.png" alt="HTML" class="inline-image"/>
+      <img src="pictures/s7-css-logo.png" alt="CSS" class="inline-image"/>
+      <img src="pictures/s7-js-logo.png" alt="Javascript" class="inline-image"/>
+    </div>
+  </section>
+  <section class="slide with-cover with-padding">
     <div class="centered-container">
       <h2 class="no-margin">Hybrid mobile apps</h2>
       <h3>Web View apps</h3>
-      <img src="pictures/slide4/tech.png" alt="Hybrid mobile apps"/>
+      <img src="pictures/s8-tech.png" alt="Hybrid mobile apps"/>
     </div>
   </section>
-  <section class="slide slide-5 with-cover with-padding">
+  <section class="slide with-cover with-padding">
     <div class="centered-container">
       <h2>Why not Web View?</h2>
       <ul>
         <li>
-          They are slow (Really slow)
+          They are slow (really slow)
         </li>
         <li>
           No complex gestures
@@ -137,14 +219,14 @@
       </ul>
     </div>
   </section>
-  <section class="slide slide-6 with-cover with-padding">
+  <section class="slide with-cover with-padding">
     <div class="centered-container">
       <h2 class="no-margin">Hybrid mobile apps</h2>
       <h3>Compiled mobile apps</h3>
-      <img src="pictures/slide6/tech.png" alt="Compiled mobile apps" />
+      <img src="pictures/s10-tech.png" alt="Compiled mobile apps" />
     </div>
   </section>
-  <section class="slide slide-7 with-cover with-padding">
+  <section class="slide with-cover with-padding">
     <div class="centered-container">
       <h2>Why not compiled apps?</h2>
       <ul>
@@ -166,139 +248,228 @@
       </ul>
     </div>
   </section>
-  <section class="slide slide-8 with-cover with-padding">
+  <section class="slide with-cover with-padding">
     <div class="centered-container">
-      <img src="pictures/slide8/crying.gif" alt="React" />
+      <img src="pictures/s12-crying.gif" alt="Crying man" />
     </div>
   </section>
-  <section class="slide slide-9 with-cover with-padding">
+  <section class="slide with-cover with-big-label">
+    <h2 class="label">React Native</h2>
+  </section>
+  <section class="slide with-cover with-padding">
     <div class="centered-container">
-      <img src="pictures/slide9/react.png" alt="React" />
+      <img src="pictures/s14-react.png" alt="React" />
     </div>
   </section>
-  <section class="slide slide-10 with-cover with-padding">
-    <div class="centered-container">
-      <h2>React consists of</h2>
-      <img src="pictures/slide10/react.png" alt="React" />
-    </div>
-  </section>
-  <section class="slide slide-11 with-cover with-padding">
+  <section class="slide with-cover with-padding">
     <div class="centered-container">
       <h2>React consists of</h2>
-      <img src="pictures/slide11/react.png" alt="React" />
+      <img src="pictures/s15-react.png" alt="React" />
     </div>
   </section>
-  <section class="slide slide-12 with-cover with-padding">
+  <section class="slide with-cover with-padding">
     <div class="centered-container">
       <h2>React consists of</h2>
-      <img src="pictures/slide12/react.png" alt="React" />
+      <img src="pictures/s16-react.png" alt="React" />
     </div>
   </section>
-  <section class="slide slide-13 with-cover with-padding">
+  <section class="slide with-cover with-padding">
     <div class="centered-container">
-      <img src="pictures/slide13/fry.jpg" alt="Wait a minute" />
+      <h2>React consists of</h2>
+      <img src="pictures/s17-react.png" alt="React" />
     </div>
   </section>
-  <section class="slide slide-14 with-cover with-padding">
-    <div class="centered-container">
-      <h2>How React Native works</h2>
-      <img src="pictures/slide14/react.png" alt="React Native" />
-    </div>
-  </section>
-  <section class="slide slide-15 with-cover with-padding">
+	<section class="slide with-cover with-padding">
     <div class="centered-container">
       <h2>Write once</h2>
-      <img src="pictures/slide15/code.png" alt="Pull to refresh code" height="400"/>
+      <img src="pictures/s18-code.png" alt="Pull to refresh code" class="card-slide-image"/>
     </div>
   </section>
-  <section class="slide slide-16 with-cover with-padding">
+	<section class="slide with-cover with-padding">
     <div class="centered-container">
       <h2>Get platform specific UI</h2>
-      <img src="pictures/slide16/ios.gif" alt="Pull to refresh iOs" height="430" />
-      <img src="pictures/slide16/android.gif" alt="Pull to refresh android" height="430" />
+      <img src="pictures/s19-ios.gif" alt="Pull to refresh iOs" height="430" />
+      <img src="pictures/s19-android.gif" alt="Pull to refresh android" height="430" />
     </div>
   </section>
-  <section class="slide slide-17 with-cover with-padding">
-    <div class="centered-container">
-      <h2>Performance</h2>
-      <img src="pictures/slide17/slow.png" alt="Performance" height="430" />
-    </div>
-  </section>
-  <section class="slide slide-18 with-cover with-padding">
-    <div class="centered-container">
-      <h2>Performance</h2>
-      <img src="pictures/slide18/react.png" alt="React Native" />
-    </div>
-  </section>
-  <section class="slide slide-19 with-cover with-padding">
-    <div class="centered-container">
-      <h2>Performance</h2>
-      <img src="pictures/slide19/react.png" alt="React Native" />
-    </div>
-  </section>
-  <section class="slide slide-20 with-cover with-padding">
-    <div class="centered-container">
-      <h2>Performance</h2>
-      <img src="pictures/slide20/react.png" alt="React Native" />
-    </div>
-  </section>
-  <section class="slide slide-21 with-cover with-padding">
-    <div class="centered-container">
-      <h2>How to use it</h2>
-      <img src="pictures/slide21/bobby.gif" alt="How to use it" />
-    </div>
-  </section>
-  <section class="slide slide-22 with-cover with-padding">
-    <div class="centered-container">
-      <h2>Ready to go</h2>
-      <pre class="code">
-        <code>npm install react-native-cli</code>
-        <code>react-native init ExampleApp</code>
-        <code>cd ExampleApp</code>
-        <code>react-native run-android</code>
-      </pre>
-    </div>
-  </section>
-  <section class="slide slide-23 with-cover with-padding">
-    <div class="centered-container">
-      <h2>index.android.js</h2>
-      <img src="pictures/slide23/code.png" height="400" alt="index.android.js" />
-    </div>
-  </section>
-  <section class="slide slide-24 with-cover with-padding">
-    <div class="centered-container">
-      <h2>Styles</h2>
-      <ul class="code">
+	<section class="slide with-cover with-padding">
+		<div class="centered-container">
+      <h2>Platform Specific Code</h2>
+      <ul>
         <li>
-          background-color -> backgroundColor
+          Using <code>Platform</code> module
+					<ol>
+						<li>
+							<code>Platform.OS</code> method
+						</li>
+						<li>
+							<code>Platform.select</code> method
+						</li>
+					</ol>
         </li>
         <li>
-          margin-top -> marginTop
-        </li>
-        <li>
-          height -> height
+          Using platform-specific file extensions
         </li>
       </ul>
     </div>
   </section>
-  <section class="slide slide-25 with-cover with-padding">
+	<section class="slide with-cover with-padding">
     <div class="centered-container">
-      <h2>Styles</h2>
-      <img src="pictures/slide25/styles1.png" height="370"/>
-      <img src="pictures/slide25/styles2.png" height="370"/>
+			<h2>Platform.OS method</h2>
+        <img src="pictures/s21-styles.png" class="card-slide-image" />
     </div>
   </section>
-  <section class="slide slide-26 with-cover with-padding">
+	<section class="slide with-cover with-padding">
+		<div class="centered-container">
+			<h2>Platform.select method</h2>
+				<img src="pictures/s22-styles.png" class="card-slide-image" />
+		</div>
+	</section>
+	<section class="slide with-cover with-padding">
+		<div class="centered-container">
+			<h2>Platform-specific file extensions</h2>
+			<ul>
+				<li>
+					.android.js
+				</li>
+				<li>
+					.ios.js
+				</li>
+				<li>
+					.windows.js (custom one)
+				</li>
+			</ul>
+		</div>
+	</section>
+  <section class="slide with-cover with-padding">
+    <div class="centered-container">
+      <img src="pictures/s24-fry.jpg" alt="Wait a minute" />
+    </div>
+  </section>
+  <section class="slide with-cover with-padding">
+    <div class="centered-container">
+      <h2>How React Native works</h2>
+      <img src="pictures/s25-react.png" alt="React Native" />
+    </div>
+  </section>
+  <section class="slide with-cover with-padding">
+    <div class="centered-container">
+      <h2>Performance</h2>
+      <img src="pictures/s26-slow.png" alt="Performance" height="430" />
+    </div>
+  </section>
+  <section class="slide with-cover with-padding">
+    <div class="centered-container">
+      <h2>Performance</h2>
+      <img src="pictures/s27-react.png" alt="React Native" />
+    </div>
+  </section>
+  <section class="slide with-cover with-padding">
+    <div class="centered-container">
+      <h2>Performance</h2>
+      <img src="pictures/s28-react.png" alt="React Native" />
+    </div>
+  </section>
+  <section class="slide with-cover with-padding">
+    <div class="centered-container">
+      <h2>Performance</h2>
+      <img src="pictures/s29-react.png" alt="React Native" />
+    </div>
+  </section>
+  <section class="slide with-cover with-padding">
+    <div class="centered-container">
+      <h2>Performance</h2>
+      <img src="pictures/s30-finn.gif" alt="Swipable Component" class="card-slide-image" />
+      <img src="pictures/s30-code.png" alt="Swipable Component Code" class="card-slide-image" />
+    </div>
+  </section>
+  <section class="slide with-cover with-padding">
+    <div class="centered-container">
+      <h2>Set state from JS on every touch event</h2>
+      <img src="pictures/s31-code.png" alt="Swipable Component Code" class="card-slide-image" />
+    </div>
+  </section>
+  <section class="slide with-cover with-padding">
+    <div class="centered-container">
+      <h2>Implement the Swipeable container handling touch events in native</h2>
+      <img src="pictures/s32-code.png" alt="Swipable Component Code" />
+    </div>
+  </section>
+  <section class="slide with-cover with-padding">
+    <div class="centered-container">
+      <h2>Using a native driver</h2>
+      <img src="pictures/s33-code.png" alt="Swipable Component Code" class="card-slide-image" />
+    </div>
+  </section>
+	<section class="slide with-cover with-padding">
+    <div class="centered-container">
+      <h2>How to use it</h2>
+      <img src="pictures/s34-bobby.gif" alt="How to use it" />
+    </div>
+  </section>
+	<section class="slide with-cover with-padding">
+		<div class="centered-container">
+			<h2>Ready to go</h2>
+			<pre class="code">
+				<code>npm install react-native-cli</code>
+				<code>react-native init ExampleApp</code>
+				<code>cd ExampleApp</code>
+				<code>react-native run-android</code>
+			</pre>
+			<br />
+			<h5>NOTE: You should also install Android SDK and Xcode</h5>
+		</div>
+	</section>
+	<section class="slide with-cover with-padding">
+		<div class="centered-container">
+			<h2>What do we have <code>out of the box</code>?</h2>
+			<ul>
+				<li>Babel</li>
+				<li>Hot reloading</li>
+				<li>Dev Tools. Sort of.</li>
+				<li>Debugging tool</li>
+			</ul>
+		</div>
+	</section>
+	<section class="slide with-cover with-padding">
+		<div class="centered-container">
+			<h2>Dev tools</h2>
+			<img src="pictures/s37-devtools.jpg" class="card-slide-image" />
+		</div>
+	</section>
+	<section class="slide with-cover with-padding">
+		<div class="centered-container">
+			<h2>Dev tools - Inspector</h2>
+			<img src="pictures/s38-inspector.jpg" class="card-slide-image" />
+			<img src="pictures/s38-network.jpg" class="card-slide-image" />
+		</div>
+	</section>
+	<section class="slide with-cover with-padding">
+		<div class="centered-container">
+			<h2>Dev tools - Perf Monitor</h2>
+			<img src="pictures/s39-perf.jpg" class="card-slide-image" />
+		</div>
+	</section>
+	<section class="slide slide-26 with-cover with-padding">
     <div class="centered-container">
       <h2 class="no-margin">Conclusion</h2>
-      <h3>Pros</h3>
+      <h4>Pros</h4>
       <ul>
+				<li>
+					It's open source!
+				</li>
         <li>
-          It's pretty fast
+          It's very productive
         </li>
         <li>
           Sharable code
         </li>
+				<li>
+					Can be added to existing native app
+				</li>
+				<li>
+					Can be extended with components written in native code
+				</li>
         <li>
           Easy to debug (using Chrome dev tools)
         </li>
@@ -306,69 +477,93 @@
           Web-like approach
         </li>
         <li>
-          Works with Redux &nbsp;<img src="pictures/slide26/good.png" height="30"/>
+          Works with Redux &nbsp;<img src="pictures/s40-good.png" height="30"/>
         </li>
+				<li>
+					Opens whole new world for JS developers
+				</li>
       </ul>
     </div>
   </section>
-  <section class="slide slide-27 with-cover with-padding">
-    <div class="centered-container">
-      <h2 class="no-margin">Conclusion</h2>
-      <h3>Cons</h3>
-      <ul>
-        <li>
-          It's still young
-        </li>
-        <li>
-          Bridge performance is low
-        </li>
-        <li>
-          Hard to implement some trivial for Web things
-        </li>
-      </ul>
-    </div>
-  </section>
-  <section class="slide slide-28 with-cover with-padding">
-    <div class="centered-container">
-      <h2 class="no-margin">Conclusion</h2>
-      <br />
-      <img src="pictures/slide28/overall.png" alt="People talk"/>
-    </div>
-  </section>
-  <section class="slide slide-29 with-cover with-padding">
-    <div class="centered-container">
-      <h2>Showcase</h2>
-      <div class="showcase-container">
-        <div class="showcase-item">
-          <img src="pictures/slide29/fb.png" alt="Facebook" class="showcase-image"/>
-          <p>Facebook</p>
-        </div>
-        <div class="showcase-item">
-          <img src="pictures/slide29/fb_ads.png" alt="Fabebook Ads" class="showcase-image"/>
-          <p>Facebook Ads Manager</p>
-        </div>
-        <div class="showcase-item">
-          <img src="pictures/slide29/fb_groups.png" alt="Facebook Groups" class="showcase-image"/>
-          <p>Facebook Groups</p>
-        </div>
-        <br />
-        <div class="showcase-item">
-          <img src="pictures/slide29/instagram.jpeg" alt="Instagram" class="showcase-image"/>
-          <p>Instagram</p>
-        </div>
-        <div class="showcase-item">
-          <img src="pictures/slide29/airbnb.png" alt="Aribnb" class="showcase-image"/>
-          <p>Airbnb</p>
-        </div>
-        <div class="showcase-item">
-          <img src="pictures/slide29/soundcloud.jpg" alt="SoundCloud Pulse" class="showcase-image"/>
-          <p>SoundCloud Pulse</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="slide slide-30 with-questions hide-counter">
-  </section>
+	<section class="slide with-cover with-padding">
+		<div class="centered-container">
+			<h2 class="no-margin">Conclusion</h2>
+			<h4>Cons</h4>
+			<ul>
+				<li>
+					It's still young
+				</li>
+				<li>
+					Ecosystem isn't big
+				</li>
+				<li>
+					You still have to be familiar with key concepts of native app development
+				</li>
+				<li>
+					Bridge performance is low
+				</li>
+				<li>
+					Hard to implement some trivial for Web things
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section class="slide slide-28 with-cover with-padding">
+		<div class="centered-container">
+			<h2 class="no-margin">People talk</h2>
+			<br />
+			<img src="pictures/s42-overall.png" alt="People talk"/>
+		</div>
+	</section>
+	<section class="slide with-cover with-padding">
+		<div class="centered-container">
+			<h2 class="no-margin">Did it fit our goals?</h2>
+			<h3 class="big-label">Yes</h3>
+			<h2 class="no-margin">Would we choose it again if we have to start a new project now?</h2>
+			<h3 class="big-label">Yes</h3>
+			<h2 class="no-margin">Should you use it?</h2>
+			<h3 class="big-label">You decide</h3>
+		</div>
+	</section>
+	<section class="slide with-cover with-padding">
+		<div class="centered-container">
+			<h2 class="no-margin">But remember</h2>
+			<h3 class="big-label padding-top-60">React Native doesn’t mean end on Native. You’re still doing it, but doing less of it and concentrating your efforts on the important parts</h3>
+		</div>
+	</section>
+	<section class="slide slide-29 with-cover with-padding">
+		<div class="centered-container">
+			<h2>Showcase</h2>
+			<div class="showcase-container">
+				<div class="showcase-item">
+					<img src="pictures/s45-fb.png" alt="Facebook" class="showcase-image"/>
+					<p>Facebook</p>
+				</div>
+				<div class="showcase-item">
+					<img src="pictures/s45-fb_ads.png" alt="Fabebook Ads" class="showcase-image"/>
+					<p>Facebook Ads Manager</p>
+				</div>
+				<div class="showcase-item">
+					<img src="pictures/s45-fb_groups.png" alt="Facebook Groups" class="showcase-image"/>
+					<p>Facebook Groups</p>
+				</div>
+				<br />
+				<div class="showcase-item">
+					<img src="pictures/s45-instagram.jpeg" alt="Instagram" class="showcase-image"/>
+					<p>Instagram</p>
+				</div>
+				<div class="showcase-item">
+					<img src="pictures/s45-airbnb.png" alt="Aribnb" class="showcase-image"/>
+					<p>Airbnb</p>
+				</div>
+				<div class="showcase-item">
+					<img src="pictures/s45-soundcloud.jpg" alt="SoundCloud Pulse" class="showcase-image"/>
+					<p>SoundCloud Pulse</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="slide slide-30 with-questions hide-counter"></section>
 	<!-- <div class="progress"></div> -->
 	<script src="shower/shower.min.js"></script>
 </body>
